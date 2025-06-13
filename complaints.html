@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>الشكاوى والمقترحات</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        img.logo {
+            width: 150px;
+            margin-bottom: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        form {
+            background-color: white;
+            padding: 30px;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        input, select, textarea, button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: left;
+            padding-right: 10px;
+            direction: rtl;
+        }
+
+        .footer-text {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .footer-logo {
+            width: 100px;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 600px) {
+            input, select, textarea, button {
+                font-size: 14px;
+            }
+
+            .footer-logo {
+                width: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- شعار الفندق -->
+    <img src="HI logo.jpg" alt="شعار الفندق" class="logo">
+
+    <h2>الشكاوى والمقترحات</h2>
+
+    <form action="https://formsubmit.co/hemo8216@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+
+        <label for="name">الاسم:</label>
+        <input type="text" id="name" name="الاسم" required>
+
+        <label for="type">نوع الرسالة:</label>
+        <select id="type" name="نوع الرسالة" required>
+            <option value="شكوى">شكوى</option>
+            <option value="مقترح">مقترح</option>
+        </select>
+
+        <label for="message">نص الرسالة:</label>
+        <textarea id="message" name="الرسالة" rows="6" required></textarea>
+
+        <button type="submit">إرسال</button>
+    </form>
+
+    <!-- الحقوق وشعار الشركة -->
+    <div class="footer">
+        <p class="footer-text">جميع الحقوق محفوظة لـ تاب إن</p>
+        <img src="tap in logo.png" alt="شعار Tap In" class="footer-logo">
+    </div>
+
+</body>
+</html>
