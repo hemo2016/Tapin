@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>فندق هوليداي إن</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        img.logo {
+            width: 160px;
+            margin-bottom: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .nav-links a {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #45a049;
+        }
+
+        @media (min-width: 600px) {
+            .nav-links {
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .nav-links a {
+                min-width: 140px;
+            }
+        }
+
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .footer-text {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .footer-logo {
+            width: 100px;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 600px) {
+            .footer-logo {
+                width: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- شعار الفندق -->
+    <img src="HI logo.jpg" alt="شعار الفندق" class="logo">
+
+    <!-- الترحيب -->
+    <h1>أهلاً وسهلاً بكم أعزائي الزوار في فندق هوليداي إن</h1>
+    <h2>Welcome dear guests to Holiday Inn Hotel</h2>
+
+    <!-- روابط الصفحات -->
+    <div class="nav-links">
+        <a href="menu.html">📋 قائمة الطعام</a>
+        <a href="wifi.html">📶 الواي فاي</a>
+        <a href="emergency.html">🚨 أرقام الطوارئ</a>
+        <a href="complaints.html">📝 الشكاوى والمقترحات</a>
+    </div>
+
+    <!-- شعار شركتك -->
+    <div class="footer">
+        <p class="footer-text">جميع الحقوق محفوظة لـ تاب إن</p>
+        <img src="tap in logo.png" alt="شعار Tap In" class="footer-logo">
+    </div>
+
+</body>
+</html>
